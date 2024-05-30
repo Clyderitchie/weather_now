@@ -1,0 +1,26 @@
+/* Used to style components within the Welcome Page such as Greeting section, button style, 
+coloring, sizing, and shaping of components. */
+
+/* Greeting Page */
+#greetingIMG {
+    border-radius: 10px;
+}
+
+/* Search Bar */
+#searchBar {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 25%;
+}
+
+#searchBar:focus {
+    border-color: #007BFF;
+}
+
+#searchButton {
+    border-radius: 5px;
+    margin-left: 3%;
+}
