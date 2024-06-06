@@ -8,21 +8,24 @@ function SearchBar({ onSearch }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(city) {
+        if (city) {
             onSearch(city);
             setCity('')
         }
     };
 
-    return(
+    return (
         <>
-          <form onSubmit={handleSubmit}>
-          <input id='searchBar' type="text" value={city} onChange={(e) => setCity(e.target.value)} 
-          placeholder="Search for your city..." />
-                <button id='searchButton'>
-                    Search
-                </button>
-          </form>
+            <form onSubmit={handleSubmit}>
+                <input id='searchBar' type="text" value={city} onChange={(e) => setCity(e.target.value)}
+                    placeholder="Search for your city..." />
+                <a href='/results'>
+                    <button id='searchButton'>
+                        Search
+                    </button>
+                </a>
+
+            </form>
         </>
     )
 };

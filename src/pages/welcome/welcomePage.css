@@ -4,12 +4,11 @@
 #welcomePageOSC {
     min-width: 75%;
     max-width: 100%;
-    min-height: 90vh;
-    max-height: 90vh;
+    min-height: 85vh;
+    max-height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 #welcomePageGreeting {
@@ -18,7 +17,6 @@
 }
 
 #greetingOSC {
-    outline: 2px solid green;
     display: flex;
     justify-content: space-evenly;
     padding: 1%;
@@ -28,4 +26,9 @@
 #searchBarOSC {
     margin-top: 5%;
     width: 100%;
+}
+
+#randomCityOSC {
+    width: 100%;
+    margin-bottom: 25%;
 }

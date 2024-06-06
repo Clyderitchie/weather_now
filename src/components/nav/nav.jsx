@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import SearchBar from "../welcomePage/searchBarComponent";
+
 import './nav.css'
 
 function Nav() {
@@ -12,25 +14,11 @@ function Nav() {
                     <div id='navLayout' className="col-12">
                         <Link id='nav' to='/'>
                             <h1 id='navMe'>
-                               Your Weather on YOUR time
+                                Your Weather on YOUR time
                             </h1>
                         </Link>
                         <div id='navLinks'>
-                            <Link id='nav1' to='/'>
-                                <h3>
-                                    Projects
-                                </h3>
-                            </Link>
-                            <Link id='nav2' to='/'>
-                                <h3>
-                                    About
-                                </h3>
-                            </Link>
-                            <Link id='nav3' to='/'>
-                                <h3>
-                                    Contact
-                                </h3>
-                            </Link>
+                            <div id='searchBarNav'> <SearchBar /></div>
                         </div>
                     </div>
                 </div>

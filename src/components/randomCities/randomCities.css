@@ -1,0 +1,15 @@
+#randomCitiesContent {
+    outline: 2px solid red;
+    width: 100%;
+}
+
+#randomCityTitle {
+    text-align: center;
+}
+
+#randomCityList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
