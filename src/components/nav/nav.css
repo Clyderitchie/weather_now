@@ -1,8 +1,17 @@
-#navLayout {
+
+
+/* #navLayout {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;   
     border-bottom: 1px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+} */
+
+/* #navOSC {
+    margin-bottom: 2.2%;
 }
 
 #nav {
@@ -16,13 +25,4 @@
     padding-left: 2%;
 }
 
-#navLinks {
-    width: 25%;
-    display: inline-flex;
-    justify-content: space-evenly;
-}
-
-#nav1, #nav2, #nav3 {
-    text-decoration: none;
-    color: black;
-}
+ */
