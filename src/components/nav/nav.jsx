@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 
 import SearchBar from "../welcomePage/searchBarComponent";
 
-import './nav.css'
-
 function Nav() {
 
     return (
@@ -25,11 +23,6 @@ function Nav() {
                 </div>
             </div>
         </div>
-            {/* <div id='navOSC'>
-                <div>
-                   
-                </div>
-            </div> */}
         </>
     )
 };

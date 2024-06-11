@@ -64,21 +64,20 @@ function WelcomePage() {
 
     return (
 
-        <div className="container">
+        <div className="container-fluid w-100 p-2 mb-3 mt-3">
             <div className="row">
+                <div className="col-12 border border-primary mb-3 p-1">
+                    <h1 className="text-center">Welcome to YOUR Weather now.</h1>
+                </div>
                 <div className="col-12 border border-primary">
-                    <h1>Welcome to YOUR Weather now.</h1>
+                    <Greeting />
+                </div>
+                <div className="col-12 border border-primary">
+                    <SearchBar onSearch={handleSearch}/>
                 </div>
             </div>
         </div>
         // <div id='welcomePageOSC'>
-        //     <h1>Welcome to YOUR Weather now.</h1>
-        //     <div id='welcomePageGreeting'>
-        //         <Greeting />
-        //     </div>
-        //     <div id='searchBarOSC'>
-        //         <SearchBar onSearch={handleSearch} />
-        //     </div>
         //     <div id='randomCityOSC'>
         //         <Carousel cities={randomCities} />
         //     </div>

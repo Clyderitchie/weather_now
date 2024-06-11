@@ -8,13 +8,19 @@ import './app.css';
 function App() {
   return (
     <>
-      <div>
-        <Nav />
-        <main id='main'>
-          <Outlet />
-        </main>
-        <div id='footerMain'>
-          <Footer />
+      <div className="container-fluid w-100 p-2 mt-1">
+        <div className="row">
+          <div className="col-12">
+            <Nav />
+          </div>
+          <div className="col-12 mb-5">
+            <main id='main'>
+              <Outlet />
+            </main>
+          </div>
+          <div className="col-12 mt-5">
+            <Footer />
+          </div>
         </div>
       </div>
     </>
