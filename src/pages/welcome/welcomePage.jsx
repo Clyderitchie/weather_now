@@ -31,9 +31,10 @@ function WelcomePage() {
         try {
             const response = await fetch(apiUrl);
             const data = await response.json();
+            console.log("WelcomePage Cities API Fetch Data: ", data.clouds.all); // Console.log for the data fetch by API. Using to edit response.ok return for carousel
 
             if (response.ok) {
-                return { name: city, temp: data.main.temp };
+                return { name: city, temp: data.main.temp, clouds: data.clouds.all };
             } else {
                 console.error(`Error fetching weather data for ${city}: ${data.message}`);
                 return { name: city, temp: 'N/A' };
