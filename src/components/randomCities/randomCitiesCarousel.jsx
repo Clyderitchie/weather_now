@@ -1,5 +1,5 @@
 import React from "react";
-import './randomCities.css';
+
 
 const Carousel = ({ cities }) => {
 
@@ -18,7 +18,9 @@ const Carousel = ({ cities }) => {
                         <div className="carousel-inner border border-secondary">
                             {cities.map((city, index) => (
                                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                                    <h3 className="text-center">{city.name}: {city.temp} °F</h3>
+                                    <h3 className="text-center">{city.name}:</h3>
+                                    <h4 className="text-center">Temp: {city.temp} °F</h4>
+                                    <h5 className="text-center">Cloud Coverage: {city.clouds} %</h5>
                                 </div>
                             ))}
                         </div>
