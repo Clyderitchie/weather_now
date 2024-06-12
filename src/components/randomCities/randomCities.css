@@ -4,11 +4,6 @@
     height: 150%;
 }
 
-#randomCityTitle {
-    margin-top: 2.2%;
-    text-align: center;
-}
-
 #carousel {
     display: flex;
     justify-content: space-evenly;
