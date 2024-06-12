@@ -8,7 +8,7 @@ import './app.css';
 function App() {
   return (
     <>
-      <div className="container-fluid w-100 p-2 mt-1">
+      <div className="container-fluid w-100 h-100 p-2 mt-1 gradient-background">
         <div className="row">
           <div className="col-12">
             <Nav />

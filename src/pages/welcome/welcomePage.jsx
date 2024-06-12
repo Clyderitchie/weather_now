@@ -75,13 +75,11 @@ function WelcomePage() {
                 <div className="col-12 border border-primary">
                     <SearchBar onSearch={handleSearch}/>
                 </div>
+                <div className="col-12 border border-primary">
+                    <Carousel cities={randomCities} />
+                </div>
             </div>
         </div>
-        // <div id='welcomePageOSC'>
-        //     <div id='randomCityOSC'>
-        //         <Carousel cities={randomCities} />
-        //     </div>
-        // </div>
     );
 }
 
