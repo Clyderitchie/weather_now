@@ -3,24 +3,25 @@ import React from "react";
 
 const Carousel = ({ cities }) => {
 
-    console.log('Cities in Carousel:', cities);
-
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-12">
-                    <h2 className="mt-2 p-3 text-center">
-                        Random Cities
-                    </h2>
-                </div>
                 <div className="col-12 d-flex justify-content-center">
                     <div id="carouselExample" className="carousel slide w-100 mt-5 p-3">
                         <div className="carousel-inner border border-secondary">
                             {cities.map((city, index) => (
                                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                                    <h3 className="text-center">{city.name}:</h3>
-                                    <h4 className="text-center">Temp: {city.temp} °F</h4>
-                                    <h5 className="text-center">Cloud Coverage: {city.clouds} %</h5>
+                                    <h3 className="text-center text-decoration-underline mt-3 p-1">{city.name}:</h3>
+                                    <div className="d-flex justify-content-center align-items-center mt-3 mb-3 p-2">
+                                        <div className="">
+                                            <h5 className="text-center">Temp: {city.temp} °F</h5>
+                                            <h5 className="text-center">Cloud Coverage: {city.clouds} %</h5>
+                                        </div>
+                                        <div className="">
+                                            <h5 className="text-center">Wind Speed: {city.wind} MPH</h5>
+                                            <h5 className="text-center">Feels Like: {city.feel} °F</h5>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
                         </div>

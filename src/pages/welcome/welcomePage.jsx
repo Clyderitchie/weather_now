@@ -31,10 +31,10 @@ function WelcomePage() {
         try {
             const response = await fetch(apiUrl);
             const data = await response.json();
-            console.log("WelcomePage Cities API Fetch Data: ", data.clouds.all); // Console.log for the data fetch by API. Using to edit response.ok return for carousel
+            // console.log("WelcomePage Cities API Fetch Data: ", data);
 
             if (response.ok) {
-                return { name: city, temp: data.main.temp, clouds: data.clouds.all };
+                return { name: city, temp: data.main.temp, clouds: data.clouds.all, wind: data.wind.speed, feel: data.main.feels_like, humidity: data.main.humidity };
             } else {
                 console.error(`Error fetching weather data for ${city}: ${data.message}`);
                 return { name: city, temp: 'N/A' };
@@ -72,9 +72,6 @@ function WelcomePage() {
                 </div>
                 <div className="col-12 border border-primary">
                     <Greeting />
-                </div>
-                <div className="col-12 border border-primary">
-                    <SearchBar onSearch={handleSearch}/>
                 </div>
                 <div className="col-12 border border-primary">
                     <Carousel cities={randomCities} />
