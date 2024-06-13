@@ -1,7 +1,5 @@
 import React from "react";
 
-import './results.css';
-
 function Results () {
 
     return (

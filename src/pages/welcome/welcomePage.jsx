@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Greeting from "../../components/welcomePage/greetingComponent";
-import SearchBar from "../../components/welcomePage/searchBarComponent";
 import Carousel from "../../components/randomCities/randomCitiesCarousel";
 import './welcomePage.css';
 

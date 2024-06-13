@@ -1,13 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function SearchBar({ onSearch }) {
 
     const [city, setCity] = useState('');
+    const nav = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (city) {
             onSearch(city);
+            nav('/search')
             setCity('')
         }
     };
@@ -27,7 +30,7 @@ function SearchBar({ onSearch }) {
                                 aria-describedby="inputGroup-sizing-lg"
                                 placeholder="Search for your city..."
                             />
-                            <button type="submit" className="btn btn-dark ms-2 rounded-pill">
+                            <button type="submit" className="btn btn-dark ms-2 rounded-pill" onClick={handleSubmit}>
                                 Search
                             </button>
                         </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import SearchBar from "../welcomePage/searchBarComponent";
+import SearchBar from "../searchBar/searchBarComponent";
 
-function Nav() {
+function Nav({ onSearch }) {
 
     return (
         <>
@@ -17,7 +17,7 @@ function Nav() {
                             </Link>
                             <div className="d-inline-flex me-3 p-1">
                                 <div>
-                                    <SearchBar />
+                                    <SearchBar onSearch={onSearch} />
                                 </div>
                             </div>
                     </div>

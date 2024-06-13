@@ -9,10 +9,14 @@ import Results from './pages/results/results';
 
 import './app.css';
 
+const handleSearch = (city) => {
+  console.log("Searching for:", city);
+};
+
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <App onSearch={handleSearch} />,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -20,8 +24,8 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/results',
-        element: <Results/>
+        path: '/search',
+        element: <Results />
       },
     ]
   }
