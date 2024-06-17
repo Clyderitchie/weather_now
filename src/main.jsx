@@ -9,23 +9,15 @@ import Results from './pages/results/results';
 
 import './app.css';
 
-const handleSearch = (city) => {
-  console.log("Searching for:", city);
-};
-
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App onSearch={handleSearch} />,
+    element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
         index: true,
         element: <Home />
-      },
-      {
-        path: '/search',
-        element: <Results />
       },
     ]
   }
