@@ -1,8 +1,37 @@
-# React + Vite
+# Your Weather Now
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Link
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Description
+
+Your Weather now is a React app that uses the OpenWeatherMap Api to render data about different cities within the world and their weather. By using a simple API fetch, the app is able to allow a user to search for their desired city and get up to date weather information for that city. 
+
+# Getting Started
+
+## Dependencies
+
+React
+React-Router-Dom
+Bootstrap
+
+
+## Installing
+
+npm i
+
+
+## Executing Program
+
+npm run dev
+
+## Authors
+
+-   Clyde Ritchie
+
+## Contact 
+
+-   Github
+-   Email
+-   Linkedin
