@@ -8,7 +8,7 @@ const Carousel = ({ cities }) => {
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
                     <div id="carouselExample" className="carousel slide w-100 mt-5 p-3">
-                        <div className="carousel-inner border border-secondary">
+                        <div className="carousel-inner">
                             {cities.map((city, index) => (
                                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                                     <h3 className="text-center text-decoration-underline mt-3 p-1">{city.name}:</h3>

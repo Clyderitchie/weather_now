@@ -7,7 +7,7 @@ function Footer() {
     return (
         <>
 
-            <div className="container-fluid w-100 p-2 mt-5 border border-top border-black">
+            <div className="container-fluid w-100 p-2 mt-5 border-top border-black">
                 <div className="row">
                     <div className="col-12">
                         <div className="d-flex justify-content-between w-100" id='footerSite'>
